@@ -26,7 +26,3 @@ int main(int argc, char *argv[])
     //(*p5)++; 错误，无法通过p5修改b的值
     return 0;
 }
-/*
-
-
-*/
