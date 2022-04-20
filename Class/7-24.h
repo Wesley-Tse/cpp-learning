@@ -21,7 +21,7 @@ private:
     std::string contents;
 };
 
-//显示声明为内联函数
+//显式声明为内联函数
 
 inline Screen &Screen::move(pos r, pos col)
 {
