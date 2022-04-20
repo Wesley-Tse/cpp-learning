@@ -50,7 +50,7 @@ private:
     void do_display(std::ostream &os) const { os << contents; }
 };
 
-//显示声明为内联函数
+//显式声明为内联函数
 inline Screen &Screen::move(pos r, pos col)
 {
     cursor = r * width + col;

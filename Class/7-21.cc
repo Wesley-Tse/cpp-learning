@@ -51,3 +51,10 @@ Sales_data add(const Sales_data &lhs, const Sales_data &rhs)
     sum.combine(rhs);
     return sum;
 }
+/*
+lingchensandianban
+bishangyanrengweirumian
+shenghuoshifouruyuan
+shuyishuleduwenoshaobian
+
+*/
