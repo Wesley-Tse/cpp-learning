@@ -1,2 +1,2 @@
 # CppLearning
-cpp codes of learning
+Exercises of C++ Primer 5th
