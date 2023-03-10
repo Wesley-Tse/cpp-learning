@@ -22,16 +22,13 @@ void selectsort(int arr[], int length)
 {
     for (int i = 0; i < length - 1; i++)
     {
-        int min = arr[i];
         int minPos = i;
         for (int j = i + 1; j < length; j++)
-        {
-            if (min > arr[j])
-            {
-                min = arr[j];
-                minPos = j;
-            }
-        }
+            minPos = arr[j] < arr[minPos] ? j : minPos;
+        // {
+        //     if (arr[i] < arr[minPos])
+        //         minPos = j;
+        // }
         if (minPos != i)
             swap(arr, i, minPos);
         cout << i + 1 << "th iteration: ";
