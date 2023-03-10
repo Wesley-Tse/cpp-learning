@@ -22,24 +22,31 @@ void selectsort(int arr[], int length)
 {
     for (int i = 0; i < length - 1; i++)
     {
+        int min = arr[i];
         int minPos = i;
         for (int j = i + 1; j < length; j++)
         {
-            if (arr[i] > arr[j])
+            if (min > arr[j])
+            {
+                min = arr[j];
                 minPos = j;
+            }
         }
         if (minPos != i)
             swap(arr, i, minPos);
+        cout << i + 1 << "th iteration: ";
+        print(arr, length);
     }
 }
 
 int main()
 {
-    int arr[] = {1, 3, 2, 6, 5, 4, 0};
+    int arr[] = {0, 3, 1, 2, 4};
     int length = sizeof(arr) / sizeof(arr[0]);
-
+    cout << "Before Sort: ";
     print(arr, length);
     selectsort(arr, length);
+    cout << "After Sorted: ";
     print(arr, length);
     return 0;
 }
