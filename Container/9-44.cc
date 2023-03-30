@@ -15,7 +15,6 @@ void myreplace(string &s, const string oldVal, const string newVal)
             s.insert(pos, newVal);
             // s.replace(pos, oldVal.size(), newVal);
             pos += newVal.size();
-            continue;
         }
         ++pos;
     }
