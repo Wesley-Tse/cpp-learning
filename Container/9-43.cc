@@ -6,17 +6,16 @@ using namespace std;
 
 void myreplace(string &s, const string oldVal, const string newVal)
 {
-    int pos = 0;
-    while (pos + oldVal.size() <= s.size())
+    auto iter = s.begin();
+    while (s.end() - iter >= oldVal.end() - oldVal.begin())
     {
-        if (s.substr(pos, oldVal.size()) == oldVal)
+        string _s(iter, iter + oldVal.size());
+        if (_s == oldVal)
         {
-            s.erase(pos, oldVal.size());
-            s.insert(pos, newVal);
-            pos += oldVal.size() * 2;
-            continue;
+            iter = s.erase(iter, iter + oldVal.size());
+            iter = s.insert(iter, newVal.cbegin(), newVal.cend());
         }
-        ++pos;
+        ++iter;
     }
 }
 
