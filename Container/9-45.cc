@@ -4,7 +4,7 @@
 std::string add_fix(const std::string &name, const std::string &prefix, const std::string &suffix)
 {
     auto ret = name;
-    ret.insert(0, prefix);
+    ret.insert(ret.begin(), prefix.begin(), prefix.end());
     ret.append(suffix);
     return ret;
 }
