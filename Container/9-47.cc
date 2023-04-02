@@ -1,6 +1,5 @@
 #include <iostream>
 #include <string>
-#include <unistd.h>
 
 /*using find_first_of*/
 void find_num_char1(const std::string &str, const std::string &str_obj)
