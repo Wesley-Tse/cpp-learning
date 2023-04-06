@@ -30,3 +30,9 @@ int main()
     elimDups(words);
     return 0;
 }
+/*output:
+Befor sort(size=8): this is a test which is a lie
+After sort(size=8): a a is is lie test this which
+After unique(size=8): a is lie test this which
+After erase(size=6): a is lie test this which
+*/
