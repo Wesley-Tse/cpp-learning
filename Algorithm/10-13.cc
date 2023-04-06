@@ -20,9 +20,9 @@ int main()
     std::vector<std::string> words{"this", "is", "change", "test", "which", "have", "is", "history", "english", "fly"};
     std::cout << "words: ";
     vprint(words);
-    auto iter = std::partition(words.begin(), words.end(), isLonger);
+    const auto iter = std::partition(words.begin(), words.end(), isLonger);
     std::cout << "longer than 5: ";
-    for (auto i = words.begin(); i != iter; i++)
+    for (auto i = words.cbegin(); i != iter; i++)
         std::cout << *i << " ";
     std::cout << std::endl;
     return 0;
