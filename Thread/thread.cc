@@ -7,7 +7,7 @@ using namespace std;
 // 线程的运行函数
 void* say_hello(void* args)
 {
-    cout << "Hello Runoob！" << endl;
+    cout << "Hello Runoob!" << endl;
     return 0;
 }
  
